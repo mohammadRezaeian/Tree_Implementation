@@ -10,11 +10,10 @@ int main() {
     tree->getMRight()->setMRight(new Tree('H'));
 
     tree->getMLeft()->setMLeft(new Tree('D'));
-    tree->getMLeft()->setMRight(new Tree('F'));
-    tree->getMLeft()->setMLeft(new Tree('E'));
+    tree->getMLeft()->getMLeft()->setMLeft(new Tree('E'));
+    tree->getMLeft()->getMLeft()->setMRight(new Tree('F'));
 
+    tree->preorderTraversal(tree);
     delete tree;
     return 0;
 }
-// TODO: Adding the rest of the leaves and branches
-//  Implementation Preorder Traversal for read leaves and branches
