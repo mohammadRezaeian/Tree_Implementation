@@ -14,12 +14,25 @@ Tree *Tree::getMRight() const {
     return m_right;
 }
 
+
 Tree *Tree::getMLeft() const {
     return m_left;
 }
+void Tree::preorderTraversal(Tree *tree)
+{
+    if (tree == nullptr)
+        return;
+    else
+    {
+        std::cout << tree->m_value << std::endl;
+
+        preorderTraversal(tree->m_left);
+        preorderTraversal(tree->m_right);
+    }
+}
 
 Tree::~Tree() {
-    delete[] m_left;
-    delete[] m_right;
+    delete m_left;
+    delete m_right;
 }
 

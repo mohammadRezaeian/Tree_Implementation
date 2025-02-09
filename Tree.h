@@ -1,6 +1,7 @@
 #ifndef TREE_PREORDER_TRAVERSAL_TREE_H
 #define TREE_PREORDER_TRAVERSAL_TREE_H
 
+#include <iostream>
 
 class Tree {
 
@@ -10,19 +11,17 @@ private:
     Tree *m_left;
 
 public:
+    explicit Tree(char _value, Tree *_right= nullptr, Tree *_left= nullptr);
+
     Tree *getMRight() const;
     Tree *getMLeft() const;
-
-    virtual ~Tree();
-
-public:
 
     void setMLeft(Tree *mLeft);
     void setMRight(Tree *mRight);
 
+    void preorderTraversal(Tree *tree);
 
-public:
-    explicit Tree(char _value, Tree *_right= nullptr, Tree *_left= nullptr);
+    virtual ~Tree();
 };
 
 
