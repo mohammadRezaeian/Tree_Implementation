@@ -13,7 +13,7 @@ int main() {
     tree->getMLeft()->setMRight(new Tree('F'));
     tree->getMLeft()->setMLeft(new Tree('E'));
 
-
+    delete tree;
     return 0;
 }
 // TODO: Adding the rest of the leaves and branches
