@@ -1,7 +1,3 @@
-//
-// Created by Mik on 2/7/2025.
-//
-
 #include "Tree.h"
 
 Tree::Tree(char _value, Tree *_right, Tree *_left) : m_value(_value),  m_right(_right), m_left(_left){}

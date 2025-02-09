@@ -1,7 +1,3 @@
-//
-// Created by Mik on 2/7/2025.
-//
-
 #ifndef TREE_PREORDER_TRAVERSAL_TREE_H
 #define TREE_PREORDER_TRAVERSAL_TREE_H
 
